@@ -21,6 +21,10 @@ function App() {
     });
   };
 
+  const handleRegister = () => {
+    alert('Se registró con éxito');
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes manejar los datos del formulario, por ejemplo, enviarlos a un servidor
@@ -72,8 +76,11 @@ function App() {
           <label htmlFor="salida">Fecha de Salida:</label>
           <input type="date" id="salida" name="salida" value={formData.salida} onChange={handleChange} required />
         </div>
+        
+
+
         <div className="btn-container">
-          <button type="submit" className="btn">Registrar</button>
+          <button type="submit" className="btn" onClick={handleRegister}>Registrar</button>
           <button type="button" className="btn btn-cancel">Cancelar</button>
         </div>
       </form>
