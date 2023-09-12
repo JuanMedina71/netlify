@@ -47,3 +47,10 @@ input[type="date"] {
 .btn-cancel {
   background-color: #ccc;
 }
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
